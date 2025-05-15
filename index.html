@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YJ-Calc</title>
+    <link rel="stylesheet" href="arquivo.css">
+</head>
+<body>
+  <header> 
+    <div class="mine-menu"> </div>
+    <div class="menu">
+      <div class="logo">
+        <img src="calculando.png" alt="Logo" class="img-logo">
+        <a href="#" class="logo-text" onclick="window.location.href='index.html'">YJ-Soluções</a>
+      </div>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Links de Navegação -->
+      <nav class="nav-links" id="navLinks">
+        <button  href="#" class="tablink" onclick="window.location.href='index.html'">Home</button>
+        <button class="tablink" onclick="openTab('rescisao'); closeMenu()">Rescisão</button>
+        <button class="tablink" onclick="openTab('salFamilia'); closeMenu()">Salario Família</button>
+        <button class="tablink" onclick="openTab('horas'); closeMenu()">Horas Extras</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--Area home-->
+    <section id="home" class="tab-content">
+      <div class="banner-area">
+          <div class="banner-titulo">
+            <h1>Nosso <br> objetivo é <br>te fazer chegar <br> ao topo!</h1> <br>
+            <h2>Escritorio virtual com compromisso real!</h2>
+            <div>
+              <button id="bt-cadastro" type="button">Cadastre-se</button>
+              <button id="bt-login" type="button">Já sou cliente</button>
+            </div>
+          </div>
+      </div>
+      <div class=""></div>
+
+      <!--Sobre nos-->
+      <div class="sobre-nos">
+          <div class="sobre-nos-area">
+            <div class="titulo-nos">
+              <h3>Sobre Nós</h3>
+              <div class="linha"></div>
+              <p>Excelência em serviços contábeis para o crescimento do seu negócio.</p>
+            </div>
+            <div class="sobre-nos-info">
+              <div class="sobre-nos-img">
+                <img src="banner4-contabil.jpg" alt="">
+              </div>
+              <div class="sobre-nos-text">
+                <h4>Soluções contábeis personalizadas <br>para sua empresa</h4>
+                <p>Oferecemos consultoria contábil especializada, com foco em resultados e segurança fiscal.</p>
+                <p><img src="sinal-de-visto.png" alt=""> Abertura de empresas.</p>
+                <p><img src="sinal-de-visto.png" alt=""> Escrituração contábil e fiscal.</p>
+                <p><img src="sinal-de-visto.png" alt=""> Planejamento fiscal</p>
+                <p><img src="sinal-de-visto.png" alt=""> Atendimento e suporte contínuo.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--area serviços-->
+      <section id="servicos">
+          <div class="servicos-area">
+            <h3>Nossos Serviços</h3>
+            <div class="linha"></div>
+            <p>Conheça os Serviços que oferecemos</p>
+          </div>
+
+          <div class="serviços-grid"> 
+            <div class="serviços-conteudo tab-content">
+                <a href="" target="_blank" onclick="window.location.href='pagina-abertura.html'">
+                    <div class="min-titulo">
+                      <h2>Abertura de Empresa</h2>
+                    </div>
+                    <div class="mini-conteudo">
+                      <p>Realizamos a abertura da sua empresa com agilidade e segurança.</p><br>
+                    </div>
+                </a>
+            </div>
+
+            <div class="serviços-conteudo tab-content">
+                <a href="" target="_blank" onclick="window.location.href='pagina-contabilidade.html'">
+                  <div class="min-titulo">
+                    <h2>Contabilidade</h2>
+                  </div>
+                  <div class="mini-conteudo">
+                    <p>Oferecemos serviços contábeis completos, desde a escrituração até a entrega de obrigações acessórias.</p><br>
+                  </div>
+                </a>
+            </div>
+            
+            <div class="serviços-conteudo tab-content">
+              <a href="" target="_blank" onclick="window.location.href='pagina-trabalhista.html'">
+                <div class="min-titulo">
+                  <h2>Departamento Trabalhista</h2>
+                </div>
+                <div class="mini-conteudo">
+                  <p>Gerenciamos todas as obrigações trabalhistas da sua empresa, assegurando o cumprimento da legislação.</p><br>
+                </div>
+              </a>
+            </div>
+
+            <div class="serviços-conteudo tab-content">
+              <a href="" target="_blank" onclick="window.location.href='pagina-assessoria.html'">
+                <div class="min-titulo">
+                  <h2>Assessoria Empresarial</h2>
+                </div>
+                <div class="mini-conteudo">
+                  <p>Oferecemos assessoria empresarial completa, otimizando processos e alcançando resultados expressivos.</p><br>
+                </div>
+              </a>
+            </div>
+
+            <div class="serviços-conteudo tab-content">
+              <a href="" target="_blank" onclick="window.location.href='pagina-simplesnacional.html'">
+                <div class="min-titulo">
+                  <h2>Simples Nacional</h2>
+                </div>
+                <div class="mini-conteudo">
+                  <p>Atendemos MEIs, MEs e empresas do Simples Nacional com serviços personalizados e acessíveis.</p><br>
+                </div>
+              </a>
+            </div>
+
+            <div class="serviços-conteudo tab-content">
+              <a href="" target="_blank" onclick="window.location.href='pagina-contador.html'">
+                <div class="min-titulo">
+                  <h2>Trocar de Contador</h2>
+                </div>
+                <div class="mini-conteudo">
+                  <p>Deixe a burocracia por nossa conta e tenha mais tempo para cuidar do seu negócio.</p><br>
+                </div>
+              </a>
+            </div>
+
+          </div>
+      </section>
+
+      <!-- contatos para atendimento -->
+      <section class="atendimento">
+        <div class="atendimento-area">
+          <h4>Atender bem você e sua empresa!</h4>
+          <p>Se você tem dúvida sobre algum problema relacionado a impostos,
+            aberturas de empresas, elaboração de balanços, fluxo de caixa entre outros,
+            entre em contato conosco. Ficaremos felizes em atendê-lo.
+          </p>
+          <div class="atendimento-contato">
+            <a href=""><img src="telefone_white.png" alt=""></a> <h4 class="h4n">(00) 00000-0000</h4>
+            <a href="https://api.whatsapp.com/send/?phone=5500900000000&text=Estou+entrando+em+contato+pelo+site%21&type=phone_number&app_absent=0"><img src="whatsapp_white.png" alt=""></a><h4 class="h4n">(00) 00000-0000</h4>
+          </div>
+        </div>
+      </section>
+      
+        <!-- duvidas frequentes -->
+      <section class="duvidas">
+        <div class="duvidas-title">
+          <h3>Dúvidas <span>Frequentes</span> </h3>
+          <p>Reunimos abaixo as perguntas mais comuns que recebemos sobre abertura de empresas, documentos necessários e outras dúvidas legais. Confira para esclarecer suas dúvidas rapidamente!</p>          
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question">O que é rescisão trabalhista?</button>
+            <div class="faq-answer">
+              <p>A rescisão trabalhista ocorre quando o contrato de trabalho é encerrado, podendo ser por iniciativa do empregador ou do empregado.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Quem tem direito ao salário família?</button>
+            <div class="faq-answer">
+              <p>O salário família é destinado aos trabalhadores que possuem filhos menores de 14 anos e recebem até um determinado valor mensal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Como calcular horas extras?</button>
+            <div class="faq-answer">
+              <p>O cálculo de horas extras envolve a multiplicação do valor da hora trabalhada pelo percentual do adicional acordado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+        
+        <!-- Conteúdo da aba de cadastro -->
+    <section id="area-cadastro" class="tab-content" style="display: none;"> 
+          <form class="cadastro-form">
+            <h3>Cadastro</h3>
+            <input type="text" placeholder="Seu Nome completo" required />
+            <input type="email" placeholder="E-mail" required />
+            <input type="email" placeholder="Telefone" required />
+            <input type="password" placeholder="Crie uma Senha" required />
+            <input type="password" placeholder="Repita sua senha" required />
+            <button type="submit" class="buttonCalc">Cadastrar</button>
+          </form>
+    </section>
+
+        <!-- Conteúdo da aba de login -->
+    <section id="area-login" class="tab-content" style="display: none;"> 
+          <form class="login-form">
+            <h3>Login</h3>
+            <input type="email" placeholder="E-mail" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit" class="buttonCalc">Entrar</button>
+          </form>
+    </section>
+
+        <!-- Aba Rescisão -->
+    <section id="rescisao" class="tab-content" style="display: none;">
+            <div class="container" id="res">
+              <h2 class="titulo">Calculadora de Rescisão</h2>
+              <label><strong class="strong2">Nome completo do funcionário:</strong>
+                  <input type="text" id="nomeFuncionario">
+              </label>
+              <label><strong class="strong2">Tipo de Rescisão:</strong>
+                <select id="tipoRescisao">
+                  <option value="semJustaCausa">Sem Justa Causa</option>
+                  <option value="justaCausa">Justa Causa</option>
+                  <option value="pedidoDemissao">Pedido de Demissão</option>
+                </select>
+              </label>
+              <label><strong class="strong2">Salário mensal (R$):</strong> <input type="number" id="salario"></label>
+              <label><strong class="strong2">Dias trabalhados no mês da rescisão:</strong> <input type="number" id="diasTrabalhados"></label>
+              <label><strong class="strong2">Meses trabalhados no ano atual:</strong> <input type="number" id="mesesTrabalhados"></label>
+              <label><strong class="strong2">Anos de empresa:</strong> <input type="number" id="anosTrabalhados"></label>
+              <label><strong class="strong2">Férias vencidas:</strong> <input type="number" id="feriasVencidas"></label>
+              <label><strong class="strong2">13º salário vencido:</strong> <input type="number" id="decimoTerceiroVencido"></label>
+              <label class="cheque"><strong class="strong2">Aviso prévio trabalhado?</strong> <input type="checkbox" id="avisoPrevioTrabalhado"></label>
+
+              <button class="buttonCalc" onclick="calcularRescisao()">Calcular</button>
+              <button class="buttonReset" onclick="limparFormulario()">Limpar</button>
+              <button class="buttonCalc" onclick="visualizarPDF()">Visualizar PDF</button>
+              <button class="buttonCalc" onclick="baixarPDF()">Baixar PDF</button>
+
+                <div id="resultado" class="resultado"></div>
+            </div>
+    </section>
+
+        <!-- Aba salario Familia -->
+    <section id="salFamilia" class="tab-content" style="display: none;">
+          <div class="container" id="sal">
+            <h2 class="titulo">Salário Família</h2>
+            <label>
+              <strong class="strong2">Salário Mensal (R$):</strong>
+              <input type="number" id="salarioFamiliaMensal" placeholder="Ex: 2500">
+            </label>
+            <label>
+              <strong class="strong2">Dias Trabalhados no Mês:</strong>
+              <input type="number" id="diasTrabalhadosFamilia" placeholder="Ex: 15">
+            </label>
+            <label>
+              <strong class="strong2">Número de filhos com menos de 14 anos ou PcD de qualquer idade:</strong>
+              <input type="number" id="numeroFilhos" placeholder="Ex: 2">
+            </label>
+            <button class="buttonCalc" onclick="calcularSalarioFamilia()">Calcular</button>
+            <div id="resultadoSalarioFamilia" class="resultado" style="display: none;"></div>
+          </div>                  
+    </section>
+
+        <!-- Aba hora extra -->
+    <section id="horas" class="tab-content" style="display: none;">
+          <div class="container" id="horasExt">
+            <h2 class="titulo">Horas Extras</h2>
+            <label><strong class="strong2">Salário mensal (R$):</strong>  
+              <input type="number" id="salarioHoraExtra">
+            </label>
+          
+            <label><strong class="strong2">Horas extras trabalhadas:</strong>
+              <input type="number" id="quantidadeHorasExtras">
+            </label>
+          
+            <label><strong class="strong2">Tipo e Adicional da Hora Extra:</strong>
+              <select id="tipoHoraExtra">
+                <option value="50-normal">50% - Normal</option>
+                <option value="100-normal">100% - Normal</option>
+                <option value="50-noturna">50% - Noturna</option>
+                <option value="100-noturna">100% - Noturna</option>
+              </select>
+            </label>
+          
+            <button class="buttonCalc" onclick="calcularHoraExtra()">Calcular Hora Extra</button>
+
+            <div class="botoes-hora-extra">
+              <button class="buttonReset" onclick="limparHorasExtras()">Limpar</button> 
+              <button class="buttonCalc" onclick="visualizarPDFHoras()">Visualizar PDF</button>
+              <button class="buttonCalc" onclick="baixarPDFHoras()">Baixar PDF</button>
+            </div>
+
+            <div id="resultadoHoraExtra" class="resultado"></div>
+          </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+        <p>Contato: @yanjonathas | <a href="mailto:yan1094@hotmail.com">yan1094@hotmail.com</a> | 📞 (74) 99968-3676</p>
+        <p>© 2025 YJ-Soluções. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="salFamila.js"></script>
+  <script src="horaExtra.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="tab-content.js"></script>
+</body>
+</html>

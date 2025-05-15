@@ -1,0 +1,988 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+   list-style-type: none; 
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+main {
+    flex: 1 1 0;
+}
+
+/* cobteudo de uso comum para todas as abas de serviços*/
+.conteudo-area {
+    flex: 1 1 0;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.conteudo-titulo h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: center;
+}
+.conteudo2 {
+    display: flex;
+    flex-direction: column;
+}
+.argumentos {
+    display: flex;
+    margin-bottom: 20px;
+}
+.argumentos img {
+    width: 50px;
+}
+.argumentos p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #333333c0;
+    font-weight: 500;
+}
+.passos {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+.passos-text {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333333c0;
+    font-weight: 400;
+}
+
+/* Menu completo */
+.mine-menu {
+    background-color: #0a3b72;
+    display: flex;
+    height: 3vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #0a3b72;
+    font-size: 23px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.tablink {
+    background: none;
+    border: none;
+    color: #0a3b72;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.tablink:hover,
+.tablink.active-tab {
+    background-color: #0a3b72;
+    color: white;
+    border-radius: 5px;
+}
+
+/* NavBar */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+    
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #0a3b72;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Pagina home */
+
+.banner-area {
+    background-image: url(banner2-contabil.jpg);
+    background-color: black;
+    width: 100%;
+    height: 81vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;  
+}
+
+.banner-titulo {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+.banner-titulo h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: bolder;
+}
+.banner-titulo h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+/* cadastro e login*/
+#bt-cadastro,
+#bt-login {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+#bt-cadastro,
+#bt-login:hover {
+    background-color: #e7e7e7;
+}
+
+.login-form, .cadastro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+.login-form, .cadastro-form h3 {
+    color: #0a3b72;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* sobre nos*/
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.sobre-nos-area {
+    height: 600px;
+} 
+h3 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+.titulo-nos,
+.servicos-area p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #333333c0;
+    font-weight: 500;
+}
+.linha {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #045cc1;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sobre-nos-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sobre-nos-img {
+    flex: 1;
+}
+.sobre-nos-text {
+    flex: 1;
+}
+.sobre-nos-img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+.sobre-nos-text h4 {
+    margin-top: 18px;
+    font-size: 27px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-left: 25px;
+    text-align: start;
+}
+.sobre-nos-text p {
+    font-size: 20px;
+    color: #333333c0;
+    font-weight: 500;
+    text-align: start;
+    margin-left: 25px;
+}
+.sobre-nos-text p img {
+    width: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/*serviços*/
+
+#servicos {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+.servicos-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviços-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.serviços-conteudo {
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    margin-left: 20px;  /* Pode gerar espaçamento */
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.137);
+    margin-bottom: 50px;
+}
+.min-titulo h2 {
+    color: #0a3b72;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.mini-conteudo p {
+    color: #333333c0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*atendimento*/
+
+.atendimento {
+    background-color: #0a3b72;
+    color: white; 
+    margin-top: 50px; 
+}
+.atendimento-area {
+    width: 100%;
+    max-width: 50%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.atendimento-area h4 {
+    font-size: 32px;
+    padding: 15px;
+}
+.atendimento-area p {
+    font-size: 18px;
+    padding: 15px;
+}
+.atendimento-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* duvidas frequentes*/
+
+.duvidas {
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+.duvidas-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    height: 400px;
+}
+.duvidas-title h3 {
+    color: #2c3e50;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+span {
+    color: #045cc1;
+}
+.duvidas-title p {
+    color: #333333c0;
+    font-weight: 500;
+    font-size: 18px;
+}
+.faq {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    color: #333333c0;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 80%;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    background-color: #045cc1;
+    color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.faq-question:hover {
+    background-color: #033b87;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #e7e7e7;
+    font-size: 14px;
+    color: #333333c0;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 150px; /* Ajuste conforme o conteúdo */
+    padding: 10px;
+}
+
+/* RESCISÃO INDIVIDUAL*/
+#res {
+    background-image: url(banner2-contabil.jpg);
+}
+/* SALARIO FAMILIA INDIVIDUAL*/
+#sal {
+    background-image: url(banner2-contabil.jpg);
+}
+/* HORAS EXTRAS INDIVIDUAL*/
+#horasExt {
+    background-image: url(banner2-contabil.jpg);
+}
+/* Container geral */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    max-width: 600px;
+    background: white;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.titulo {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.strong2 {
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.cheque {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cheque input {
+    margin-left: 10px;
+}
+
+.buttonCalc, .buttonReset {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonCalc {
+    background-color: #0a3b72;
+    color: white;
+}
+
+.buttonCalc:hover {
+    background-color: #045cc1;
+}
+
+.buttonReset {
+    background-color: #0673f0;
+    color: white;
+}
+
+.buttonReset:hover {
+    background-color: #cc0000;
+}
+
+.resultado {
+    display: none;
+    background-color: #E3F2FD;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #0a3b72;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #0a3b72;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.rodape a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para resultado de horas extras */
+#resultadoHoraExtra {
+    display: none;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #0a3b72;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#resultadoHoraExtra p {
+    margin-bottom: 10px;
+}
+
+#resultadoHoraExtra strong {
+    color: #2c3e50;
+}
+
+#resultadoHoraExtra span {
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsividade */
+
+@media (max-width: 1600px) {
+    /* paginas extras */
+    .argumentos {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .argumentos img {
+        width: 40px;
+        height: 40px;
+    }
+    /* serviços */
+    .serviços-conteudo {
+    width: 300px;
+    height: 200px;
+    }
+    .atendimento-area h4 {
+        font-size: 25px;
+        padding: 15px;
+    }
+    .atendimento-contato .h4n {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* paginas extras */
+    .argumentos {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .argumentos img {
+        width: 40px;
+        height: 40px;
+    }
+    /* serviços */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 74px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        height: 50vh;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* sobre nos */
+
+    .sobre-nos {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    .sobre-nos-area {
+        height: 800px;
+    } 
+    h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .titulo-nos,
+    .servicos-area p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-nos-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .atendimento-contato img {
+        width: 30px;
+    }
+    .atendimento-contato .h4n {
+        font-size: 15px;
+    }
+
+    /* servicos */
+
+    .serviços-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .serviços-conteudo {
+        width: 250px;
+        height: 200px;
+        margin-left: 20px;
+    }
+
+    /* duvidas frequentes */
+
+    .duvidas {
+        flex-direction: column;
+    }
+    .duvidas-title {
+        text-align: center;
+    }
+    .faq-item {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 860px) {
+    /* paginas extras */
+    .argumentos {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .argumentos img {
+        width: 40px;
+        height: 40px;
+    }
+    /* serviços */
+    #servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .servicos-area h3 {
+        margin-top: 60px;
+    }
+    .servicos-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviços-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .serviços-conteudo {
+        width: 290px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .min-titulo h2 {
+        color: #0a3b72;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .mini-conteudo p {
+        padding: 20px;
+    }
+
+    /* atendimentos */
+
+    .atendimento {
+        margin-top: 20px; 
+    }
+    .atendimento-area {
+        width: 100%;
+        max-width: 80%;
+        height: 300px;
+    }
+
+    /* duvidas frequentes */
+    .duvidas {
+        flex-direction: column;
+    }
+    .duvidas-title {
+        text-align: center;
+    }
+    .faq-item {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    /*paginas extras */
+
+    .argumentos {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .argumentos img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*banner */
+    .banner-area {
+    background-image: url(Banner2-contabil.jpg);
+    width: 100%;
+    height: 81vh;
+    background-position: start;
+    background-size: cover; 
+    }
+    .banner-titulo h1 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .banner-titulo h2 {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    /* sobre nos */
+    
+    .sobre-nos {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    .sobre-nos-area {
+        height: 800px;
+    } 
+    h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .titulo-nos,
+    .servicos-area p {
+        font-size: 18px;
+        margin-bottom: 30px;
+
+    }
+    .linha {
+        height: 3px;
+        background-color: #045cc1;
+    }
+    .sobre-nos-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sobre-nos-img img {
+        width: 100%;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .sobre-nos-text h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .sobre-nos-text p {
+        font-size:18px;
+        color: #333333c0;
+        font-weight: 500;
+        text-align: start;
+        margin-left: 25px;
+    }
+    .sobre-nos-text p img {
+        width: 15px;
+    }
+
+    /* serviços */
+
+    #servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .servicos-area h3 {
+        margin-top: 60px;
+    }
+    .servicos-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviços-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .serviços-conteudo {
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    .min-titulo h2 {
+        color: #0a3b72;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .mini-conteudo p {
+        padding: 20px;
+    }
+
+    /* atendimentos */
+
+    .atendimento {
+        margin-top: 20px; 
+    }
+    .atendimento-area {
+        width: 100%;
+        max-width: 80%;
+        height: 500px;
+    }
+    .atendimento-area h4 {
+        font-size: 28px;
+    }
+    .atendimento-area p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .atendimento-contato {
+        flex-direction: row;
+    }
+    .atendimento-contato h4 {
+        font-size: 15px;
+        
+    }
+    .atendimento-contato a img {
+        width: 25px;
+    }
+
+    /* duvidas frequentes */
+    .duvidas {
+        flex-direction: column;
+    }
+    .duvidas-title {
+        text-align: center;
+    }
+    .faq p {
+        text-align: center;
+    }
+    .faq-item {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .faq-item.active .faq-answer {
+        max-height: 150px; /* Ajuste conforme o conteúdo */
+        padding: 10px;
+    }
+
+    /* rodape */
+
+    .rodape {
+        background-color: #0a3b72;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .rodape a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .rodape a:hover {
+        text-decoration: underline;
+    }
+}
+
+
