@@ -660,11 +660,14 @@ input, select {
         display: none;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         position: absolute;
-        top: 74px;
+        top: 60px;
         background-color: white;
         border-radius: 0 0 10px 10px;
         width: 100%;
+        max-width: 80%;
+        margin: auto;
         height: 50vh;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         z-index: 999;
@@ -747,7 +750,7 @@ input, select {
         height: 40px;
     }
     .banner-titulo h1 {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: bolder;
     }
     .banner-titulo h2 {
@@ -841,11 +844,13 @@ input, select {
 
     /*banner */
     .banner-area {
-    background-image: url(Banner2-contabil.jpg);
-    width: 100%;
-    height: 81vh;
-    background-position: start;
-    background-size: cover; 
+        background-image: url(banner2-contabil.jpg);
+        background-color: black;
+        width: 100%;
+        height: 81vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;  
     }
     /* sobre nos */
     
@@ -1001,6 +1006,26 @@ input, select {
         text-decoration: underline;
     }
 }
+@media (max-width: 360px) {
+        .banner-area {
+        background-image: url(banner2-contabil.jpg);
+        background-color: black;
+        width: 100%;
+        height: 81vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;  
+    }
+     .banner-titulo h1 {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .banner-titulo h2 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+
 
 
 
