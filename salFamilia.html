@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquivo.css">
+    <title>Abertura de Empresa - YJ-Soluções</title>
+</head>
+<body>
+<header> 
+    <div class="mine-menu"> </div>
+    <div class="menu">
+      <div class="logo">
+        <img src="calculando.png" alt="Logo" class="img-logo">
+        <a href="#" class="logo-text" onclick="window.location.href='index.html'">YJ-Soluções</a>
+      </div>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Links de Navegação -->
+      <nav class="nav-links" id="navLinks">
+        <button  href="#" class="tablink" onclick="window.location.href='index.html'">Home</button>
+        <button class="tablink" onclick="window.location.href='rescisao.html'">Rescisão</button>
+        <button class="tablink"  onclick="window.location.href='salFamilia.html'">Salario Família</button>
+        <button class="tablink" onclick="openTab('horas'); closeMenu()">Horas Extras</button>
+      </nav>
+    </div>
+</header>
+
+<main id="salFamilia" class="tab-content">
+  <div class="container" id="sal">
+    <h2 class="titulo">Salário Família</h2>
+    <label>
+      <strong class="strong2">Salário Mensal (R$):</strong>
+      <input type="number" id="salarioFamiliaMensal" placeholder="Ex: 2500">
+    </label>
+    <label>
+      <strong class="strong2">Dias Trabalhados no Mês:</strong>
+      <input type="number" id="diasTrabalhadosFamilia" placeholder="Ex: 15">
+    </label>
+    <label>
+      <strong class="strong2">Número de filhos com menos de 14 anos ou PcD de qualquer idade:</strong>
+      <input type="number" id="numeroFilhos" placeholder="Ex: 2">
+    </label>
+    <button class="buttonCalc" onclick="calcularSalarioFamilia()">Calcular</button>
+    <div id="resultadoSalarioFamilia" class="resultado" style="display: none;"></div>
+  </div>                  
+</main>
+
+<footer class="rodape">
+    <p>Contato: @yanjonathas | <a href="mailto:yan1094@hotmail.com">yan1094@hotmail.com</a> | 📞 (74) 99968-3676</p>
+    <p>© 2025 YJ-Soluções. Todos os direitos reservados.</p>
+</footer>
+<script src="salFamilia.js"></script>
+<script src="tab-content.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>

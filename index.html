@@ -25,9 +25,9 @@
       <!-- Links de Navegação -->
       <nav class="nav-links" id="navLinks">
         <button  href="#" class="tablink" onclick="window.location.href='index.html'">Home</button>
-        <button class="tablink" onclick="openTab('rescisao'); closeMenu()">Rescisão</button>
-        <button class="tablink" onclick="openTab('salFamilia'); closeMenu()">Salario Família</button>
-        <button class="tablink" onclick="openTab('horas'); closeMenu()">Horas Extras</button>
+        <button class="tablink" onclick="window.location.href='rescisao.html'">Rescisão</button>
+        <button class="tablink"  onclick="window.location.href='salFamilia.html'">Salario Família</button>
+        <button class="tablink" onclick="window.location.href='horaExtra.html'">Horas Extras</button>
       </nav>
     </div>
   </header>
@@ -40,8 +40,8 @@
             <h1>Nosso <br> objetivo é <br>te fazer chegar <br> ao topo!</h1> <br>
             <h2>Escritorio virtual com compromisso real!</h2>
             <div>
-              <button id="bt-cadastro" type="button">Cadastre-se</button>
-              <button id="bt-login" type="button">Já sou cliente</button>
+              <button id="bt-cadastro" type="button"   onclick="window.location.href='cadastro.html'">Cadastre-se</button>
+              <button id="bt-login" type="button" onclick="window.location.href='cliente.html'">Já sou cliente</button>
             </div>
           </div>
       </div>
@@ -195,114 +195,6 @@
         </div>
       </section>
     </section>
-        
-        <!-- Conteúdo da aba de cadastro -->
-    <section id="area-cadastro" class="tab-content" style="display: none;"> 
-          <form class="cadastro-form">
-            <h3>Cadastro</h3>
-            <input type="text" placeholder="Seu Nome completo" required />
-            <input type="email" placeholder="E-mail" required />
-            <input type="email" placeholder="Telefone" required />
-            <input type="password" placeholder="Crie uma Senha" required />
-            <input type="password" placeholder="Repita sua senha" required />
-            <button type="submit" class="buttonCalc">Cadastrar</button>
-          </form>
-    </section>
-
-        <!-- Conteúdo da aba de login -->
-    <section id="area-login" class="tab-content" style="display: none;"> 
-          <form class="login-form">
-            <h3>Login</h3>
-            <input type="email" placeholder="E-mail" required />
-            <input type="password" placeholder="Senha" required />
-            <button type="submit" class="buttonCalc">Entrar</button>
-          </form>
-    </section>
-
-        <!-- Aba Rescisão -->
-    <section id="rescisao" class="tab-content" style="display: none;">
-            <div class="container" id="res">
-              <h2 class="titulo">Calculadora de Rescisão</h2>
-              <label><strong class="strong2">Nome completo do funcionário:</strong>
-                  <input type="text" id="nomeFuncionario">
-              </label>
-              <label><strong class="strong2">Tipo de Rescisão:</strong>
-                <select id="tipoRescisao">
-                  <option value="semJustaCausa">Sem Justa Causa</option>
-                  <option value="justaCausa">Justa Causa</option>
-                  <option value="pedidoDemissao">Pedido de Demissão</option>
-                </select>
-              </label>
-              <label><strong class="strong2">Salário mensal (R$):</strong> <input type="number" id="salario"></label>
-              <label><strong class="strong2">Dias trabalhados no mês da rescisão:</strong> <input type="number" id="diasTrabalhados"></label>
-              <label><strong class="strong2">Meses trabalhados no ano atual:</strong> <input type="number" id="mesesTrabalhados"></label>
-              <label><strong class="strong2">Anos de empresa:</strong> <input type="number" id="anosTrabalhados"></label>
-              <label><strong class="strong2">Férias vencidas:</strong> <input type="number" id="feriasVencidas"></label>
-              <label><strong class="strong2">13º salário vencido:</strong> <input type="number" id="decimoTerceiroVencido"></label>
-              <label class="cheque"><strong class="strong2">Aviso prévio trabalhado?</strong> <input type="checkbox" id="avisoPrevioTrabalhado"></label>
-
-              <button class="buttonCalc" onclick="calcularRescisao()">Calcular</button>
-              <button class="buttonReset" onclick="limparFormulario()">Limpar</button>
-              <button class="buttonCalc" onclick="visualizarPDF()">Visualizar PDF</button>
-              <button class="buttonCalc" onclick="baixarPDF()">Baixar PDF</button>
-
-                <div id="resultado" class="resultado"></div>
-            </div>
-    </section>
-
-        <!-- Aba salario Familia -->
-    <section id="salFamilia" class="tab-content" style="display: none;">
-          <div class="container" id="sal">
-            <h2 class="titulo">Salário Família</h2>
-            <label>
-              <strong class="strong2">Salário Mensal (R$):</strong>
-              <input type="number" id="salarioFamiliaMensal" placeholder="Ex: 2500">
-            </label>
-            <label>
-              <strong class="strong2">Dias Trabalhados no Mês:</strong>
-              <input type="number" id="diasTrabalhadosFamilia" placeholder="Ex: 15">
-            </label>
-            <label>
-              <strong class="strong2">Número de filhos com menos de 14 anos ou PcD de qualquer idade:</strong>
-              <input type="number" id="numeroFilhos" placeholder="Ex: 2">
-            </label>
-            <button class="buttonCalc" onclick="calcularSalarioFamilia()">Calcular</button>
-            <div id="resultadoSalarioFamilia" class="resultado" style="display: none;"></div>
-          </div>                  
-    </section>
-
-        <!-- Aba hora extra -->
-    <section id="horas" class="tab-content" style="display: none;">
-          <div class="container" id="horasExt">
-            <h2 class="titulo">Horas Extras</h2>
-            <label><strong class="strong2">Salário mensal (R$):</strong>  
-              <input type="number" id="salarioHoraExtra">
-            </label>
-          
-            <label><strong class="strong2">Horas extras trabalhadas:</strong>
-              <input type="number" id="quantidadeHorasExtras">
-            </label>
-          
-            <label><strong class="strong2">Tipo e Adicional da Hora Extra:</strong>
-              <select id="tipoHoraExtra">
-                <option value="50-normal">50% - Normal</option>
-                <option value="100-normal">100% - Normal</option>
-                <option value="50-noturna">50% - Noturna</option>
-                <option value="100-noturna">100% - Noturna</option>
-              </select>
-            </label>
-          
-            <button class="buttonCalc" onclick="calcularHoraExtra()">Calcular Hora Extra</button>
-
-            <div class="botoes-hora-extra">
-              <button class="buttonReset" onclick="limparHorasExtras()">Limpar</button> 
-              <button class="buttonCalc" onclick="visualizarPDFHoras()">Visualizar PDF</button>
-              <button class="buttonCalc" onclick="baixarPDFHoras()">Baixar PDF</button>
-            </div>
-
-            <div id="resultadoHoraExtra" class="resultado"></div>
-          </div>
-    </section>
   </main>
 
   <footer class="rodape">
@@ -311,7 +203,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="salFamila.js"></script>
+  <script src="salFamilia.js"></script>
   <script src="horaExtra.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="tab-content.js"></script>

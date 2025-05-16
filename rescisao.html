@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arquivo.css">
+    <title>Abertura de Empresa - YJ-Soluções</title>
+</head>
+<body>
+
+  <header> 
+    <div class="mine-menu"> </div>
+    <div class="menu">
+      <div class="logo">
+        <img src="calculando.png" alt="Logo" class="img-logo">
+        <a href="#" class="logo-text" onclick="window.location.href='index.html'">YJ-Soluções</a>
+      </div>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Links de Navegação -->
+      <nav class="nav-links" id="navLinks">
+        <button  href="#" class="tablink" onclick="window.location.href='index.html'">Home</button>
+        <button class="tablink" onclick="window.location.href='rescisao.html'">Rescisão</button>
+        <button class="tablink"  onclick="window.location.href='salFamilia.html'">Salario Família</button>
+        <button class="tablink" onclick="openTab('horas'); closeMenu()">Horas Extras</button>
+      </nav>
+    </div>
+  </header>
+    <!-- Aba Rescisão -->
+    <section id="rescisao">
+            <div class="container" id="res">
+              <h2 class="titulo">Calculadora de Rescisão</h2>
+              <label><strong class="strong2">Nome completo do funcionário:</strong>
+                  <input type="text" id="nomeFuncionario">
+              </label>
+              <label><strong class="strong2">Tipo de Rescisão:</strong>
+                <select id="tipoRescisao">
+                  <option value="semJustaCausa">Sem Justa Causa</option>
+                  <option value="justaCausa">Justa Causa</option>
+                  <option value="pedidoDemissao">Pedido de Demissão</option>
+                </select>
+              </label>
+              <label><strong class="strong2">Salário mensal (R$):</strong> <input type="number" id="salario"></label>
+              <label><strong class="strong2">Dias trabalhados no mês da rescisão:</strong> <input type="number" id="diasTrabalhados"></label>
+              <label><strong class="strong2">Meses trabalhados no ano atual:</strong> <input type="number" id="mesesTrabalhados"></label>
+              <label><strong class="strong2">Anos de empresa:</strong> <input type="number" id="anosTrabalhados"></label>
+              <label><strong class="strong2">Férias vencidas:</strong> <input type="number" id="feriasVencidas"></label>
+              <label><strong class="strong2">13º salário vencido:</strong> <input type="number" id="decimoTerceiroVencido"></label>
+              <label class="cheque"><strong class="strong2">Aviso prévio trabalhado?</strong> <input type="checkbox" id="avisoPrevioTrabalhado"></label>
+
+              <button class="buttonCalc" onclick="calcularRescisao()">Calcular</button>
+              <button class="buttonReset" onclick="limparFormulario()">Limpar</button>
+              <button class="buttonCalc" onclick="visualizarPDF()">Visualizar PDF</button>
+              <button class="buttonCalc" onclick="baixarPDF()">Baixar PDF</button>
+
+                <div id="resultado" class="resultado"></div>
+            </div>
+    </section>
+<footer class="rodape">
+    <p>Contato: @yanjonathas | <a href="mailto:yan1094@hotmail.com">yan1094@hotmail.com</a> | 📞 (74) 99968-3676</p>
+    <p>© 2025 YJ-Soluções. Todos os direitos reservados.</p>
+</footer>
+<script src="script.js"></script>
+<script src="tab-content.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
