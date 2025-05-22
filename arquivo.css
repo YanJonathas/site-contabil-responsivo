@@ -75,6 +75,9 @@ main {
     color: #333333c0;
     font-weight: 400;
 }
+#rescisao {
+    margin-top: 100px;
+}
 
 /* Menu */
 header {
