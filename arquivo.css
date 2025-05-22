@@ -35,6 +35,7 @@ main {
     max-width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 .conteudo-titulo h3 {
     margin-top: 50px;
@@ -75,86 +76,65 @@ main {
     font-weight: 400;
 }
 
-/* Menu completo */
-.mine-menu {
-    background-color: #0a3b72;
-    display: flex;
-    height: 3vh;
+/* Menu */
+header {
+    position: fixed;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1000;
+    background: transparent;
+    padding: 20px 12%;
+    transition: all .50s ease;
+    background-color: white;
 }
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-    max-width: 80%;
     margin: auto;
-    position: relative;
+    align-items: center;
 }
-
-.logo {
+.logo{
     display: flex;
     align-items: center;
 }
-
-.img-logo {
-    height: 45px;
+.logo img {
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
-
-.logo-text {
+.logo a {
     color: #0a3b72;
-    font-size: 23px;
-    font-weight: 900;
-    font-family: sans-serif;
-    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.nav-links {
+.navbar {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
 }
-
-.tablink {
-    background: none;
-    border: none;
+.navbar button {
     color: #0a3b72;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all .50s ease;
+    margin-left: 30px;
+    background-color: white;
+    border: none;
+}
+.navbar button:hover {
+    color: #0673f0;
     cursor: pointer;
-    padding: 10px 15px;
-    transition: background 0.3s;
 }
 
-.tablink:hover,
-.tablink.active-tab {
-    background-color: #0a3b72;
-    color: white;
-    border-radius: 5px;
-}
-
-/* NavBar */
-
-.hamburger {
+#menu-icon img {
+    width: 30px;
+    background: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    z-index: 1001;
-    
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: #0a3b72;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* Pagina home */
@@ -164,6 +144,7 @@ main {
     background-color: black;
     width: 100%;
     height: 81vh;
+    margin-top: 100px;
     background-position: center;
     background-size: cover;
     display: flex;  
@@ -309,7 +290,6 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-
 .serviços-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -374,8 +354,6 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-
-
 /* duvidas frequentes*/
 
 .duvidas {
@@ -641,6 +619,41 @@ input, select {
 }
 
 @media (max-width: 1000px) {
+
+    #menu-icon img {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 60vh;
+        background: white;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        transition: all .50s ease;
+    }
+    .navbar button {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+    .navbar button:hover {
+        color: #0673f0;
+        transform: translatey(5px);
+    }
+    .open {
+        right: 0%;
+    }
+
+
     /* paginas extras */
     .argumentos {
         display: flex;
@@ -652,10 +665,6 @@ input, select {
         height: 40px;
     }
     /* serviços */
-    .hamburger {
-        display: flex;
-    }
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -842,6 +851,7 @@ input, select {
         font-size: 15px;
     }
 
+    
     /*banner */
     .banner-area {
         background-image: url(banner2-contabil.jpg);
@@ -1004,6 +1014,12 @@ input, select {
 
     .rodape a:hover {
         text-decoration: underline;
+    }
+    .rodape {
+        font-size: 15px;
+    }
+    .rodape a {
+        font-size: 15px;
     }
 }
 @media (max-width: 360px) {

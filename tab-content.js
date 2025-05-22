@@ -16,15 +16,13 @@ function openTab(tabId) {
 
 // function menu 
 
-function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.classList.toggle("active");
-}
+  let menu = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
 
-function closeMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.classList.remove("active");
-}
+  menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('open');
+  }
 
 // cadastro e cliente
 
