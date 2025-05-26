@@ -79,6 +79,7 @@ main {
     margin-top: 100px;
 }
 
+
 /* Menu */
 header {
     position: fixed;
@@ -142,12 +143,15 @@ header {
 
 /* Pagina home */
 
+.tab-content {
+    overflow: hidden;
+}
 .banner-area {
     background-image: url(banner2-contabil.jpg);
     background-color: black;
-    width: 100%;
-    height: 81vh;
-    margin-top: 100px;
+    width: 100vw;
+    height: calc(100vh + 70px);
+    overflow: hidden;
     background-position: center;
     background-size: cover;
     display: flex;  
