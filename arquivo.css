@@ -32,7 +32,8 @@ main {
 .conteudo-area {
     flex: 1 1 0;
     width: 100%;
-    max-width: 80%;
+    max-width: 1200px;
+    margin: 100px auto 50px auto;
     margin: auto;
     margin-bottom: 50px;
     margin-top: 100px;
@@ -301,6 +302,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    gap: 20px;
 }
 
 .serviços-conteudo {
@@ -308,7 +310,7 @@ h3 {
     height: 250px;
     padding: 20px;
     display: flex;
-    margin-left: 20px;  /* Pode gerar espaçamento */
+    margin: 0 auto 50px auto; /* centraliza e mantém espaço inferior */
     justify-content: center;
     align-items: center;
     background-color: #e7e7e7;
